@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 n = int(input())
 a = [None]*n
 for i in range(n):
@@ -16,3 +17,13 @@ for j in range(1, n):
 
 for i in range(n):
     print(*a[i])
+=======
+import itertools
+
+word = input()
+all_combinations = list(map(''.join, itertools.product(*zip(word.upper(), word.lower()))))
+
+all_combinations.sort(reverse=True)
+print((all_combinations))
+print(len(all_combinations))
+>>>>>>> main
